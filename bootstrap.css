@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'UnisanHCap';
+    src: url('fonts/uni-sans.heavy-caps\(1\).otf') format('opentype');
+}
+@font-face {
+    font-family: 'UnisanTCap';
+    src: url('fonts/uni-sans.thin-caps\(1\).otf') format('opentype');
+}
+
+
 body {
     background-color:#23272A;
     animation: fadeInAnimation ease 3s;
@@ -12,5 +22,31 @@ body {
                 opacity: 1;
             }
         }
+a {
+    text-decoration: none;
+    
+}
+
+nav {
+    background-color:#23272A
+}
+
+li {
+    padding-left: 30px;
+    
+}
+ul {
+    color:white !important;
+    text-decoration: none;
+    padding-left: 30px;
+    margin-left:400px; 
+    font-family:"UnisanHCap"; 
+    font-size:20px;
+}
+.nav-link {
+    text-decoration: none !important;
+    color:white !important;
+    float: left;
+}
 
 
