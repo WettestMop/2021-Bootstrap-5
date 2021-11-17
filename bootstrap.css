@@ -49,4 +49,19 @@ ul {
     float: left;
 }
 
+div.bodycontainer {
+    width:inherit;
+    height: 1000px;
+    background-color: #2C2F33;
+    border-color: #23272A;
+    border-radius: 15px;
+    border-style:ridge;
+    margin-top: 20px;
+}
+.text-center {
+    color:white;
+    font-family:"UnisanTCap";
+
+}
+
 
