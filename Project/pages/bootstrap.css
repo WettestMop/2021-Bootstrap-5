@@ -72,12 +72,19 @@ h1.text-center {
 }
 
 div.bodcontainer {
-    width: 150px;
-    height: 100px;
-    margin-left:50%;
-    margin-top:50%;
+    width: 500px;
+    height: 300px;
+    margin:auto;
+    margin-top:20%;
     background-color: #2C2F33;
     border-color: #23272A;
     border-style:ridge;
     border-radius: 20px;
 }
+
+label {
+    font-family:"UnisanTCap";
+    color:white;
+}
+
+
