@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'UnisanHCap';
-    src: url('fonts/uni-sans.heavy-caps\(1\).otf') format('opentype');
+    src: url('fonts2/heavy.otf') format('opentype');
 }
 @font-face {
     font-family: 'UnisanTCap';
-    src: url('fonts/uni-sans.thin-caps\(1\).otf') format('opentype');
+    src: url('fonts2/thin.otf') format('opentype');
 }
 
 
@@ -84,6 +84,11 @@ div.bodcontainer {
 
 label {
     font-family:"UnisanTCap";
+    color:white;
+}
+
+h1 {
+    font-family:"UnisanHCap";
     color:white;
 }
 
