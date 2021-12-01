@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'UnisanHCap';
-    src: url('fonts/uni-sans.heavy-caps\(1\).otf') format('opentype');
+    src: url('fonts/heavy.otf') format('opentype');
 }
 @font-face {
     font-family: 'UnisanTCap';
-    src: url('fonts/uni-sans.thin-caps\(1\).otf') format('opentype');
+    src: url('fonts/thin.otf') format('opentype');
 }
 
 
