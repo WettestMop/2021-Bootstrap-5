@@ -9,13 +9,13 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>
 
-    <body style="background-color: #23272A;">
+    <body style="background-color: #FF7442;">
         
 
         <div class="navbar">
-            <div class="collapse mx-auto" id="navbarToggleExternalContent">
-                <div class="p-4 mx-auto" style="background-color: #2C2F33;">
-                  <h5 class="text-white h4">Contents</h5>
+            <div class="collapse mx-auto position-fixed" id="navbarToggleExternalContent" style="margin-top:60px !important;  z-index:80;">
+                <div class="p-4 text-center" style="background-color: #44525B; width:1920px !important;" id="workpls">
+                  <h5 class="text-white h4 text-center">Contents</h5>
                   <span class="text-muted">
                     <button type="button" class="btn btn-dark" onclick="scrolltoelm()">Image 1</button>
                     <button type="button" class="btn btn-dark" onclick="scrolltoelm2()">Image 2</button>
@@ -25,8 +25,8 @@
                 </div>
               </div>
               <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="container-fluid float-start position-fixed top-0 start-0" style="margin-left: 15px !important; margin-top:15px; z-index:100;">
+                  <button class="navbar-toggler mx-auto float-start " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left:-15px !important; z-index:100;">
                     <span class="navbar-toggler-icon float-start"></span>
                   </button>
 
@@ -34,6 +34,19 @@
                   <script>
                       function scrolltoelm2() {
                         const elmnt = document.getElementById("image2");
+
+                        elmnt.scrollIntoView(true, {behavior: "smooth"});
+                      }
+
+
+                      function scrolltoelm() {
+                        const elmnt = document.getElementById("image1");
+
+                        elmnt.scrollIntoView(true, {behavior: "smooth"});
+                      }
+
+                      function scrolltop() {
+                        const elmnt = document.getElementById("workpls");
 
                         elmnt.scrollIntoView(true, {behavior: "smooth"});
                       }
@@ -55,9 +68,13 @@
                 
             </div>
 
+            <div class="top" id="top1">
+              <button onclick="scrolltop()" style="margin-left:-600px;"><img src="up-arrow.png" class="float-start position-fixed bottom-0 start-0"style="width:50px;height: 50px; margin-left: 10px;"></button>
+            </div>
+
 
             <div class="img" id="img1">
-                <img src="book1.jpg"class="rounded-3 float-end">
+                <img src="book1.jpg"class="rounded-3 float-end" id="image1">
             </div>
 
 
@@ -65,6 +82,9 @@
                 <img src="book2.jpg" class="rounded-3 float-start" id="image2">
 
             </div>
+
+
+            
 
             
 

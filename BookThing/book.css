@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'font1';
-    src: url('CutiveMono-Regular.ttf') format('opentype');
+    src: url('NightmarePills-BV2w.ttf') format('opentype');
 }
 
 img {
@@ -37,9 +37,7 @@ h3 {
     margin-top: 20px !important;
 }
 
-div.navbar {
-    background-color: #;
-}
+
 
 body {
     animation: fadeInAnimation ease 3s;
